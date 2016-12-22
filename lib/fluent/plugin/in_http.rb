@@ -111,6 +111,10 @@ module Fluent::Plugin
       end
     end
 
+    def multi_workers_ready?
+      true
+    end
+
     def start
       @_event_loop_run_timeout = @blocking_timeout
 
